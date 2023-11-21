@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Using Roboto for a modern look */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light background for a modern feel */
+}
+
+#next-button.retry-button {
+    background-color: red; /* Red background color */
+    color: white; /* White text color */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#next-button.retry-button:hover {
+    background-color: #cc0000; /* Slightly darker red on hover */
+}
+
+#quiz-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 50%;
+    background-color: white; /* White background for quiz container */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adding a subtle shadow */
+}
+
+.choice-container {
+    margin-top: 10px;
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Modern blue color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+#timer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px -2px 5px rgba(0,0,0,0.1);
+}
+
+.results-container {
+    font-size: 1.2em;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #007bff; /* Use a color that stands out, like blue */
+}
+
+#next-button {
+    float: right; /* Aligns the button to the right */
+    background-color: #28a745; /* Green background color */
+    color: white; /* White text color for better contrast */
+}
+
+#next-button:hover {
+    background-color: #218838; /* Slightly darker green on hover for a subtle effect */
+}
+
+/* You might also want to clear the float if necessary */
+.choice-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#next-button:disabled {
+    background-color: gray; /* Grey background for disabled state */
+    color: #ccc; /* Lighter text color for better contrast */
+    cursor: not-allowed; /* Change cursor to indicate non-interactive state */
+}
+
+#next-button:disabled:hover {
+    background-color: gray; /* Maintain the same color on hover */
+}
